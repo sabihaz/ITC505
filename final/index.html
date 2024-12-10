@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lights Out</h1>
+        <p>Can you turn off all the lights?</p>
+    </header>
+    <main>
+        <div id="game-board"></div>
+        <button id="restart-button">Restart Game</button>
+    </main>
+    <section id="addendum">
+    <h2>Project Addendum</h2>
+    <ul>
+        <li>The primary challenge was ensuring the starting configuration was both random and solvable. This was resolved by simulating random user clicks on a solved board to guarantee solvability.</li>
+        <li>Creating a visually appealing design required experimenting with CSS for responsiveness, hover effects, and consistent grid alignment.</li>
+        <li>Ensuring the JavaScript code was modular and reusable for features like toggling tiles and checking the game state took significant refactoring.</li>
+        <li>Testing edge cases, such as clicking tiles on the board's edges or corners, helped refine the toggle logic for neighbors.</li>
+        <li>Incorporating a seamless "Last Modified" footer without disrupting other game functions required careful placement of the script.</li>
+    </ul>
+</section>
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
