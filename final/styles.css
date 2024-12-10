@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1c1f3a, #212c4f);
+    color: white;
+    text-align: center;
+}
+
+header {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+main {
+    margin: 20px auto;
+}
+
+/* Game Board Styles */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(6, 60px); /* 6x6 board */
+    gap: 8px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.tile {
+    width: 60px;
+    height: 60px;
+    background-color: #ffc400;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.tile.off {
+    background-color: #333;
+}
+
+/* Restart Button */
+#restart-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#restart-button:hover {
+    background-color: #e64a19;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    color: #ccc;
+}
